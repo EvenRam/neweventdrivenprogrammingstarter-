@@ -23,6 +23,8 @@ function handlePotatoClick() {
 function handleUnicornClick() {
     let theDivIWantToAddTo = document.querySelector('div');
     theDivIWantToAddTo.innerText += '🦄';
+    theDivIWantToAddTo.innerHTML += `<span onclick="deleteUnicorn(event)">🦄</span>`;
+
 
 }
 
@@ -40,6 +42,10 @@ function deletePotato(event) {
     // how do I get rid of things?
 
     event.target.remove();
+}
+
+function deleteUnicorn(event){
+
 }
 
 
